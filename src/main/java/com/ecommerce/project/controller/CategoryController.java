@@ -46,7 +46,7 @@ public class CategoryController {
     public ResponseEntity<String> updateCategory(@RequestBody Category category,
                                                  @PathVariable Long categoryId){
         try{
-            Category savedCategory = categoryService.UpdateCategory(category,categoryId);
+            Category savedCategory = categoryService.updateCategory(category,categoryId);
             return new ResponseEntity<>("Category with category id: "+categoryId+" updated successfully", HttpStatus.OK);
 
         }catch (ResponseStatusException e){
