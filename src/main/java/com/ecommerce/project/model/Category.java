@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Data//A shortcut for @ToString, @EqualsAndHashCode, @Getter on all fields, @Setter on all non-final fields, and @RequiredArgsConstructo
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
+public class Category { //representing the entity at the db level
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long categoryId;
